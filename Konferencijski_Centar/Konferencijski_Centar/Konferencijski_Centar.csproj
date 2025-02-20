@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DCDCAE3-3B37-4E1F-A5BD-BA83023C5C45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Konferencijski_Centar</RootNamespace>
+    <AssemblyName>Konferencijski_Centar</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DogadjajForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DogadjajForm.Designer.cs">
+      <DependentUpon>DogadjajForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizatorForm.Designer.cs">
+      <DependentUpon>OrganizatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dogadjaj.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Organizator.cs" />
+    <Compile Include="OrganizatorDogadjaj.cs" />
+    <Compile Include="Predavac.cs" />
+    <Compile Include="PredavacForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PredavacForm.Designer.cs">
+      <DependentUpon>PredavacForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PredavacSesija.cs" />
+    <Compile Include="Prijava.cs" />
+    <Compile Include="PrijaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrijaveForm.Designer.cs">
+      <DependentUpon>PrijaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz.Designer.cs">
+      <DependentUpon>Prikaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prostorija.cs" />
+    <Compile Include="ProstorijaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProstorijaForm.Designer.cs">
+      <DependentUpon>ProstorijaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sesija.cs" />
+    <Compile Include="SesijaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesijaForm.Designer.cs">
+      <DependentUpon>SesijaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ucesnik.cs" />
+    <Compile Include="UcesnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcesnikForm.Designer.cs">
+      <DependentUpon>UcesnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UvezivanjeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UvezivanjeForm.Designer.cs">
+      <DependentUpon>UvezivanjeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UvezivanjePredavacSesija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UvezivanjePredavacSesija.Designer.cs">
+      <DependentUpon>UvezivanjePredavacSesija.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DogadjajForm.resx">
+      <DependentUpon>DogadjajForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizatorForm.resx">
+      <DependentUpon>OrganizatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PredavacForm.resx">
+      <DependentUpon>PredavacForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrijaveForm.resx">
+      <DependentUpon>PrijaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz.resx">
+      <DependentUpon>Prikaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProstorijaForm.resx">
+      <DependentUpon>ProstorijaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesijaForm.resx">
+      <DependentUpon>SesijaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcesnikForm.resx">
+      <DependentUpon>UcesnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UvezivanjeForm.resx">
+      <DependentUpon>UvezivanjeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UvezivanjePredavacSesija.resx">
+      <DependentUpon>UvezivanjePredavacSesija.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
