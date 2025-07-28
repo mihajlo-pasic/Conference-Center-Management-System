@@ -1,8 +1,8 @@
 # Conference Center Management System
-![Database Schema](konferencijski_centar_model.png)
 
 ## Overview
 The Conference Management System is a comprehensive desktop application designed to streamline the organization and management of conferences, events, sessions, speakers, participants, and venues. Built with C# and MySQL, this system provides administrators and regular users with intuitive tools to manage conference-related data efficiently.
+![Database Schema](konferencijski_centar_model.png)
 
 ## Features
 
